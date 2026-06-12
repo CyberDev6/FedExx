@@ -37,7 +37,7 @@ padding: 0 15px; display: flex; justify-content: space-between; align-items: cen
 .login-txt { font-size: 14px; font-weight: bold; cursor: pointer; }
 
 /* --- Page Management --- */
-#tracking-page { display: none; padding-bottom: 50px; }
+#tracking-page { display: none; padding-bottom: 50px; max-width: var(--max-width); margin: 0 auto; padding-left: 15px; padding-right: 15px; }
 
 /* --- Home Page Hero --- */
 .hero {
@@ -57,7 +57,7 @@ display: flex; flex-direction: column; align-items: center; justify-content: cen
 .action-card i { font-size: 2rem; margin-bottom: 12px; display: block; }
 .action-card p { font-size: 11px; font-weight: bold; text-transform: uppercase; }
 
-.track-input-wrapper { display: flex; background: white; border: 1px solid #eee; border-top: none; }
+.track-input-wrapper { display: flex; background: white; border: 1px solid #eee; border-top: none; align-items: stretch; }
 .track-input-wrapper input { flex: 1; border: none; padding: 25px; font-size: 18px; outline: none; }
 .track-btn-main { background: var(--fedex-orange); color: white; border: none; padding: 0 40px; font-weight: bold; cursor: pointer; font-size: 18px; display: flex; align-items: center; gap: 10px; }
 
@@ -100,8 +100,9 @@ background-size: cover; background-position: center; color: white; text-align: c
 .tracking-id-label { font-size: 12px; font-weight: bold; color: #666; margin-bottom: 5px; }
 .tracking-number-display { font-size: 20px; color: #333; display: flex; align-items: center; gap: 10px; }
 .status-timeline { padding: 30px 20px; position: relative; }
-.timeline-line { position: absolute; left: 35px; top: 50px; bottom: 50px; width: 4px; background: #e0e0e0; }
-.status-row { display: flex; gap: 20px; margin-bottom: 40px; position: relative; z-index: 1; }
+.timeline-line { position: absolute; left: 38px; top: 50px; bottom: 50px; width: 4px; background: #e0e0e0; }
+.status-row { display: flex; gap: 20px; margin-bottom: 40px; position: relative; z-index: 1; align-items: flex-start; }
+.status-icon { width: 40px; height: 40px; border-radius: 50%; background: #ccc; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .status-row.active .status-icon { background: var(--fedex-orange); }
 .status-row.active .status-bubble { background: #f2f2f2; padding: 15px; border-radius: 15px; flex: 1; }
 .bubble-title { font-weight: bold; text-transform: uppercase; font-size: 14px; }
@@ -247,7 +248,7 @@ footer { background: #333; color: white; padding: 80px 20px 40px; margin-top: 0;
 Logistics Dispatch Center<br>
 Monticello Hub, IN 47960, US
 </p>
-<p class="bubble-date">Label Created<br>12/06/2026 1:22 PM</p>
+<p class="bubble-date">Label Created<br>12/06/2026 8:00AM</p>
 </div>
 </div>
 <div class="status-row">
@@ -256,7 +257,7 @@ Monticello Hub, IN 47960, US
 </div>
 <div class="status-row">
 <div class="status-icon" style="background: var(--fedex-purple);"><i class="fas fa-check" style="font-size:10px;"></i></div>
-<div class="status-text-only" style="color: var(--fedex-purple);">IN TRANSIT - KEASBEY, NJ</div>
+<div class="status-text-only" style="color: var(--fedex-purple);">IN TRANSIT - LAFAYETTE, IN</div>
 </div>
 <div class="status-row active">
 <div class="status-icon"><i class="fas fa-truck" style="font-size:12px;"></i></div>
